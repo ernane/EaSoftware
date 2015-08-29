@@ -6,7 +6,9 @@ import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 
-@NamedQueries({@NamedQuery(name="Livro.Minimo",query="SELECT l FROM Livro l WHERE l.preco > :preco")})
+@NamedQueries({
+		@NamedQuery(name = "Livro.Minimo", query = "SELECT l FROM Livro l WHERE l.preco > :preco"),
+		@NamedQuery(name = "Livro.all", query = "SELECT l FROM Livro l") })
 @Entity
 public class Livro {
 
@@ -24,7 +26,7 @@ public class Livro {
 		this.nome = nome;
 		this.preco = preco;
 	}
-	
+
 	public String getNome() {
 		return nome;
 	}
