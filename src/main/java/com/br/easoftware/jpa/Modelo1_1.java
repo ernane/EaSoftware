@@ -36,6 +36,9 @@ public class Modelo1_1 {
 		a2.getLivros().add(l5);
 		a2.getLivros().add(l6);
 		a2.getLivros().add(l7);
+		
+		a3.getLivros().add(l8);
+		a3.getLivros().add(l9);
 
 		EntityTransaction tx = em.getTransaction();
 		tx.begin();
