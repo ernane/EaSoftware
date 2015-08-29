@@ -18,4 +18,5 @@ public class Modelo1_3 {
 			System.out.println(autor.getNome());
 		}
 	}
+
 }

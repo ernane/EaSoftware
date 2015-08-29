@@ -3,7 +3,10 @@ package com.br.easoftware.modelo;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 
+@NamedQueries({@NamedQuery(name="Livro.Minimo",query="SELECT l FROM Livro l WHERE l.preco > :preco")})
 @Entity
 public class Livro {
 
