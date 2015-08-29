@@ -12,5 +12,4 @@ public class Modelo1_6 {
 
 		System.out.println(media);
 	}
-
 }
