@@ -20,6 +20,21 @@ public class Autor {
 
 	@ManyToMany(cascade = CascadeType.ALL)
 	private Collection<Livro> livros = new ArrayList<Livro>();
+	
+	public Collection<Livro> getLivros() {
+		return livros;
+	}
+
+	public void setLivros(Collection<Livro> livros) {
+		this.livros = livros;
+	}
+
+	public Autor() {
+	}
+
+	public Autor(String nome) {
+		this.nome = nome;
+	}
 
 	public String getNome() {
 		return nome;
